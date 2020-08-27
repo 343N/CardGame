@@ -4,13 +4,10 @@ import java.util.Deque;
 import java.util.logging.Level;
 
 import model.GameEngineImpl;
-import model.PlayingCardImpl;
 import model.SimplePlayer;
 import model.interfaces.GameEngine;
 import model.interfaces.Player;
 import model.interfaces.PlayingCard;
-import model.interfaces.PlayingCard.Suit;
-import model.interfaces.PlayingCard.Value;
 import validate.Validator;
 import view.GameEngineCallbackImpl;
 
@@ -47,8 +44,8 @@ public class SimpleTestClient
       gameEngine.addGameEngineCallback(new GameEngineCallbackImpl());
 
       // Uncomment this to DEBUG your deck of cards creation
-      //      Deque<PlayingCard> shuffledDeck = gameEngine.getShuffledHalfDeck();
-      //      printCards(shuffledDeck);
+           Deque<PlayingCard> shuffledDeck = gameEngine.getShuffledHalfDeck();
+           printCards(shuffledDeck);
 
       // main loop to add players, place a bet and receive hand
       for (Player player : players)

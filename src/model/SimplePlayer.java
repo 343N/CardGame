@@ -99,7 +99,7 @@ public class SimplePlayer implements model.interfaces.Player {
     public String toString() {
         // will always show results if result is valid (i.e not zero)
         return String.format(
-            "Player: id=%s, name=%s, bet=%d, points=%d %s",
+            "Player: id=%s, name=%s, bet=%d, points=%d%s",
             id,
             name,
             bet,

@@ -4,12 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Deque;
-import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.SortedSet;
 import java.util.TreeSet;
 
-import jdk.jfr.internal.Logger;
 import model.interfaces.GameEngine;
 import model.interfaces.Player;
 import model.interfaces.PlayingCard;
