@@ -101,6 +101,7 @@ public class GameEngineCallbackImpl implements GameEngineCallback
 
    @Override
    public void houseBustCard(PlayingCard card, GameEngine engine) {
+      // will log at INFO, as OutputTrace.pdf specifies.
       logger.log(
          Level.INFO, 
          String.format("Card Dealt to House .. %s ... YOU BUSTED!", card)

@@ -170,10 +170,14 @@ public class GameEngineImpl implements GameEngine {
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     public Collection<Player> getAllPlayers() {
         // treesets are sorted automatically upon element insertion
         // so no sorting is needed here.
-        return players;
+        
+        // faster to surpress the warning than creating a new collection
+        // from the existing one via 'new TreeSet<T>(players)'
+        return (Collection<Player>) players.clone();
     }
 
     @Override
